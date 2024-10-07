@@ -150,8 +150,55 @@ input[type='number'] {
   opacity: 1;
 }
 
+
 @media (max-width: 320px) {
   .container {
     width: 300px;
+  }
+  .money {
+    font-size: 18px;
+  }
+  .btn, input[type='text'], input[type='number'] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 30px 0 10px;
+  }
+  .inc-exp-container {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inc-exp-container > div:first-of-type {
+    border-right: none;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 450px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .money {
+    font-size: 22px;
+  }
+  .btn {
+    font-size: 18px;
   }
 }
